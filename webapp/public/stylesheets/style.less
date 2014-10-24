@@ -1,0 +1,33 @@
+@import "reset";
+@import "./preboot/preboot";
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: @brand-primary;
+}
+.border-radius(@radius){
+
+   .border-top-radius(@radius);
+   .border-right-radius(@radius);
+   .border-bottom-radius(@radius);
+   .border-left-radius(@radius);
+}
+a {
+  color: #00B7FF;
+}
+button.test{
+   .border-radius (20px);
+   padding : 20px;
+}
+.wrapper {
+  .make-row();
+}
+.content-main {
+  .make-column(8);
+  background: blue;
+}
+.content-sidebar {
+  .make-column(4);
+  //.make-column-offset(1);
+  background: red;
+}
